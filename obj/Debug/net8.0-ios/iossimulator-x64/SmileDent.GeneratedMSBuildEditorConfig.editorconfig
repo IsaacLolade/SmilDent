@@ -1,0 +1,95 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SmileDent
+build_property.ProjectDir = C:\Users\isaac\RiderProjects\SmileDent\SmileDent\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/Afiliacion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.Afiliacion.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Afiliacion.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Afiliacion.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/Agenda.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.Agenda.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Agenda.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Agenda.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.App.xaml
+build_metadata.AdditionalFiles.TargetPath = View\App.xaml
+build_metadata.AdditionalFiles.RelativePath = View\App.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AppShell.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/CreacionPacientes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.CreacionPacientes.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CreacionPacientes.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CreacionPacientes.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/Historial.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.Historial.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Historial.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Historial.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/InciarSesion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.InciarSesion.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InciarSesion.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InciarSesion.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/Main.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.Main.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Main.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Main.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/Paciente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.Paciente.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Paciente.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Paciente.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/Tarifas.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.Tarifas.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Tarifas.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Tarifas.xaml
+
+[C:/Users/isaac/RiderProjects/SmileDent/SmileDent/View/VistaPacientes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SmileDent.View.VistaPacientes.xaml
+build_metadata.AdditionalFiles.TargetPath = View\VistaPacientes.xaml
+build_metadata.AdditionalFiles.RelativePath = View\VistaPacientes.xaml

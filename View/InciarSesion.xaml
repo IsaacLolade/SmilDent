@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmileDent.View.InciarSesion"
+             xmlns:viewmodel="clr-namespace:SmileDent.ViewModel"
+             x:DataType="viewmodel:IniciarViewModel"
+             >
+
+    <StackLayout BackgroundColor="#6ed9c7"
+                 Orientation="Vertical">
+                 
+        <StackLayout 
+                    VerticalOptions="CenterAndExpand"
+       >
+            <Image WidthRequest="200"
+                   Source="logo.png"
+                   
+            >
+                   <Image.Shadow><Shadow Brush="#888888"
+                                                 Radius="10"
+                                                 Opacity="0.8">
+                                   </Shadow></Image.Shadow>
+                   </Image>
+               
+            <Entry BackgroundColor="WhiteSmoke"
+                   Placeholder="Username"
+                   TextColor="#1f9489"
+                   Text="{Binding Username}"
+                   WidthRequest="250"
+                   Margin="50,50,50,15"
+                   PlaceholderColor="Grey"
+                   FontAttributes="Bold"
+            >
+                   <Entry.Shadow><Shadow Brush="#888888"
+                                         Radius="10"
+                                         Opacity="0.8">
+                            
+                   </Shadow></Entry.Shadow>
+            </Entry>
+            
+              <Entry BackgroundColor="WhiteSmoke"
+                     Placeholder="Password"
+                     Text="{Binding Passwd}"
+                     TextColor="#1f9489"
+                     WidthRequest="250"
+                     Margin="50,15,50,60"
+                     PlaceholderColor="Grey"
+                     IsPassword="True"
+                     FontAttributes="Bold"
+                      
+              >
+                     <Entry.Shadow><Shadow Brush="#888888"
+                                            Radius="10"
+                                            Opacity="0.8">
+                            
+                     </Shadow></Entry.Shadow>
+              </Entry>
+        
+              <Button BackgroundColor="#1f9489"
+                      Text="Iniciar Sesión"
+                      TextColor="WhiteSmoke"
+                      IsEnabled="True"
+                      Command="{Binding NavigateCommand}"
+                      WidthRequest="150"
+                      >
+                       
+                     <Button.Shadow><Shadow Brush="#888888"
+                                            Radius="10"
+                                            Opacity="0.8">
+                            
+                     </Shadow></Button.Shadow>
+              </Button>
+        
+       </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>

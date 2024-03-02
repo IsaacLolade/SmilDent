@@ -1,0 +1,1 @@
+C:\Users\isaac\RiderProjects\SmileDent\SmileDent\SmileDent.csproj;x64

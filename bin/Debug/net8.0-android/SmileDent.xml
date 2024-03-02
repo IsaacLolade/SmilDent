@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmileDent</name>
+    </assembly>
+    <members>
+        <member name="T:SmileDent.ViewModel.AfiliacionViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:SmileDent.ViewModel.AfiliacionViewModel.updatePatientCommand">
+            <summary>The backing field for <see cref="P:SmileDent.ViewModel.AfiliacionViewModel.UpdatePatientCommand"/>.</summary>
+        </member>
+        <member name="P:SmileDent.ViewModel.AfiliacionViewModel.UpdatePatientCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SmileDent.ViewModel.AfiliacionViewModel.UpdatePatient"/>.</summary>
+        </member>
+        <member name="T:SmileDent.ViewModel.CreacionPacienteViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:SmileDent.ViewModel.CreacionPacienteViewModel._createPatientCommand">
+            <summary>The backing field for <see cref="P:SmileDent.ViewModel.CreacionPacienteViewModel.createPatientCommand"/>.</summary>
+        </member>
+        <member name="P:SmileDent.ViewModel.CreacionPacienteViewModel.createPatientCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SmileDent.ViewModel.CreacionPacienteViewModel.createPatient"/>.</summary>
+        </member>
+        <member name="T:SmileDent.ViewModel.HistorialViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:SmileDent.ViewModel.HistorialViewModel.addMedicalHistoryCommand">
+            <summary>The backing field for <see cref="P:SmileDent.ViewModel.HistorialViewModel.AddMedicalHistoryCommand"/>.</summary>
+        </member>
+        <member name="P:SmileDent.ViewModel.HistorialViewModel.AddMedicalHistoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SmileDent.ViewModel.HistorialViewModel.AddMedicalHistory"/>.</summary>
+        </member>
+        <member name="F:SmileDent.ViewModel.HistorialViewModel.addAlertCommand">
+            <summary>The backing field for <see cref="P:SmileDent.ViewModel.HistorialViewModel.AddAlertCommand"/>.</summary>
+        </member>
+        <member name="P:SmileDent.ViewModel.HistorialViewModel.AddAlertCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SmileDent.ViewModel.HistorialViewModel.AddAlert"/>.</summary>
+        </member>
+        <member name="T:SmileDent.ViewModel.IniciarViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:SmileDent.ViewModel.IniciarViewModel.navigateCommand">
+            <summary>The backing field for <see cref="P:SmileDent.ViewModel.IniciarViewModel.NavigateCommand"/>.</summary>
+        </member>
+        <member name="P:SmileDent.ViewModel.IniciarViewModel.NavigateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SmileDent.ViewModel.IniciarViewModel.Navigate"/>.</summary>
+        </member>
+    </members>
+</doc>

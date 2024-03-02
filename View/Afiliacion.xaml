@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmileDent.View.Afiliacion"
+             xmlns:viewmodel="clr-namespace:SmileDent.ViewModel"
+             x:DataType="viewmodel:AfiliacionViewModel"
+             Title="Afiliación"
+             IconImageSource="user.png">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="True" IsEnabled="True" />
+    </Shell.BackButtonBehavior>
+
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <StackLayout Orientation="Vertical" BackgroundColor="White">
+            <!-- Información de Contacto -->
+            <StackLayout BackgroundColor="#1f9489">
+                <Label Text="Datos de Domicilio"
+                       TextColor="White"
+                       FontFamily="Bold"
+                       FontSize="16"
+                       Padding="10"/>
+            </StackLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Information StackLayouts -->
+                <StackLayout Orientation="Vertical" Margin="5">
+                    <StackLayout Orientation="Horizontal" Margin="10">
+                        <!-- Dirección -->
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Dirección"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Text="{Binding Direction}"
+                                   Margin="10"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"
+                                   WidthRequest="600"/>
+                        </StackLayout>
+
+                        <!-- CP -->
+                        <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                            <Label Text="CP"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Keyboard="Numeric"
+                                   Text="{Binding PostCode}"
+                                   WidthRequest="200"
+                                   Margin="10"
+                                   PlaceholderColor="Grey"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Margin="10">
+                        <!-- Población -->
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Poblacion"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Text="{Binding Population}"
+                                   Margin="10"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"
+                                   WidthRequest="400"/>
+                        </StackLayout>
+
+                        <!-- Provincia -->
+                        <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                            <Label Text="Provincia"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Text="{Binding Province}"
+                                   WidthRequest="200"
+                                   Margin="10"
+                                   PlaceholderColor="Grey"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"
+                                   IsEnabled="False"/>
+                        </StackLayout>
+
+                        <!-- País -->
+                        <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                            <Label Text="Pais"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Text="{Binding Country}"
+                                   WidthRequest="200"
+                                   Margin="10"
+                                   PlaceholderColor="Grey"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"
+                                   IsEnabled="False"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Margin="10">
+                        <!-- Teléfono Particular -->
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Número Particular"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Text="{Binding Telephone}"
+                                   WidthRequest="200"
+                                   Margin="10"
+                                   Keyboard="Numeric"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+                        <!-- Móvil -->
+                        <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                            <Label Text="Móvil"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Placeholder="{Binding PhoneNumber}"
+                                   WidthRequest="200"
+                                   Margin="10"
+                                   PlaceholderColor="Grey"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+                        <!-- Email -->
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Email"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Text="{Binding Email}"
+                                   WidthRequest="200"
+                                   Margin="10"/>
+                        </StackLayout>
+                        
+                        
+                        <!-- Dentista Responsable -->
+                        <StackLayout Orientation="Vertical" Margin="15">
+                            <Label Text="Dentista Responsable"
+                                   TextColor="#1f9489"
+                                   FontSize="14"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Entry Text="{Binding Dentist}"
+                                   WidthRequest="200"
+                                   Margin="10"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Image StackLayout -->
+                <StackLayout Grid.Column="1" Margin="15">
+                    <!-- Imagen -->
+                    <Image x:Name="ImageUpload"
+                           Source="user.png"
+                           SemanticProperties.Description="User's photo"
+                           HeightRequest="200"
+                           WidthRequest="200"/>
+                    <Button Text="Añadir Imagen"
+                            Padding="10"
+                            TextColor="White"
+                            BackgroundColor="#1f9489"
+                            Clicked="Button_OnClicked"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- Datos Personales -->
+            <StackLayout BackgroundColor="#1f9489">
+                <Label Text="Datos Personales"
+                       TextColor="White"
+                       FontFamily="Bold"
+                       FontSize="16"
+                       Padding="10"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <!-- Datos Personales -->
+                <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                    <Label Text="Fecha Nacimiento"
+                           TextColor="#1f9489"
+                           FontSize="14"
+                           HorizontalOptions="Start"
+                           VerticalOptions="CenterAndExpand"/>
+                    <DatePicker x:Name="FechaNacimiento"
+                                Date="{Binding BirthDate}"
+                                Format="dd/MM/yyyy"
+                                Margin="10"
+                                HorizontalOptions="Start"
+                                VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <!-- Sexo -->
+                <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                    <Label Text="Sexo"
+                           TextColor="#1f9489"
+                           FontSize="14"
+                           HorizontalOptions="Start"
+                           VerticalOptions="CenterAndExpand"/>
+                    <Picker x:Name="Sexo"
+                             SelectedItem="{Binding Sex}"
+                             Margin="10">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Masculino</x:String>
+                                <x:String>Femenino</x:String>
+                                <x:String>Híbrido</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+
+                <!-- Grupo Sanguineo -->
+                <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                    <Label Text="Grupo sangúineo"
+                           TextColor="#1f9489"
+                           FontSize="14"
+                           HorizontalOptions="Start"
+                           VerticalOptions="CenterAndExpand"/>
+                    <Picker x:Name="Sangre"
+                            SelectedItem="{Binding Blood}"
+                            Margin="10">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>A</x:String>
+                                <x:String>A-</x:String>
+                                <x:String>A+</x:String>
+                                <x:String>B</x:String>
+                                <x:String>B-</x:String>
+                                <x:String>B+</x:String>
+                                <x:String>AB</x:String>
+                                <x:String>AB-</x:String>
+                                <x:String>AB+</x:String>
+                                <x:String>0</x:String>
+                                <x:String>0-</x:String>
+                                <x:String>0+</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+
+                <!-- Estado Civil -->
+                <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                    <Label Text="Estado Civil"
+                           TextColor="#1f9489"
+                           FontSize="14"
+                           HorizontalOptions="Start"
+                           VerticalOptions="CenterAndExpand"/>
+                    <Picker x:Name="Status"
+                            SelectedItem="{Binding MaritalStatus}"
+                            Margin="10">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>CASADO/A</x:String>
+                                <x:String>SOLTERO/A</x:String>
+                                <x:String>SEPARADO/A LEGAL</x:String>
+                                <x:String>DIVORCIADO/A</x:String>
+                                <x:String>VIUDO/A</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+                <!-- Guardar los cambios -->
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Margin="15">
+                    <Button HorizontalOptions="End"
+                            Command="{Binding UpdatePatientCommand}"
+                            Text="Guardar cambios"
+                            TextColor="White"
+                            BackgroundColor="#1f9489"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

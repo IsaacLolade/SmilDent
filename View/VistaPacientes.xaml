@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmileDent.View.VistaPacientes"
+             xmlns:viewmodel="clr-namespace:SmileDent.ViewModel"
+             Title="Pacientes"
+             IconImageSource="users.png"
+             >
+    
+    <ContentPage.BindingContext>
+        <viewmodel:ListPacientesViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical" 
+                 BackgroundColor="White"
+    >
+
+        <!-- Barra de búsqueda -->
+        <StackLayout Margin="10" Orientation="Horizontal" HorizontalOptions="Center">
+
+            <SearchBar Placeholder="Introduce Nombre, Apellido ..."
+                       TextChanged="SearchCommand"
+                       PlaceholderColor="Grey"
+                       TextColor="Black"
+                       WidthRequest="400"
+                        >
+            </SearchBar>
+
+            <Button Text="Nuevo"
+                    TextColor="White"
+                    BackgroundColor="#1f9489"
+                    Margin="10"
+                    Clicked="OnCreatePaciente" />
+            
+        </StackLayout>
+        
+        <RefreshView>
+            <!-- Lista de pacientes -->
+            <ListView x:Name="llistat" ItemsSource="{Binding Patients}" SelectionMode="None" ItemTapped="onPacienteSelected" Margin="15" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10">
+                                <Label Text="{Binding Name}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Surname}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding PhoneNumber}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Email}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Direction}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Population}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Province}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding PostCode}" 
+                                       TextColor="Black"
+                                       FontSize="14"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </RefreshView>
+    </StackLayout>
+
+</ContentPage>

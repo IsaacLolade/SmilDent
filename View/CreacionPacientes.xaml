@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:SmileDent.ViewModel"
+             x:Class="SmileDent.View.CreacionPacientes"
+             x:DataType="viewModel:CreacionPacienteViewModel"
+             Title="SmileDent1"
+             >
+    
+    <ContentPage.Content>
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                <!-- Apartado Filiación -->
+                <StackLayout BackgroundColor="#1f9489">
+                    <Label Text="Datos de Filiación"
+                           FontFamily="Bold"
+                           FontSize="16"
+                           TextColor="White"
+                           Padding="10"/>
+                </StackLayout>
+
+                <!-- Campos de información del paciente -->
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Número de Historial -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Nº de Historial" 
+                               TextColor="#1f9489"
+                               FontSize="15"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding Id, Mode=TwoWay}"
+                               IsReadOnly="True"
+                               MaxLength="5"
+                               Margin="10"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                    <!-- Nombre -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Nombre" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding Name}"  
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                    <!-- Apellidos -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Apellidos" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding Surname}"
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                    <!-- Tipo de Identificación -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Tipo de Identificación" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Picker x:Name="Identificacion"  SelectedItem="{Binding DocumentType}" Margin="10">
+                            <Picker.ItemsSource >
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>DNI</x:String>
+                                    <x:String>NIE</x:String>
+                                    <x:String>Pasaporte</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+
+                    <!-- Número de Identificación -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Nº Identificación" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding DocumentNumber}"
+                               MaxLength="9"
+                               Margin="10"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+                <!-- Información de Mutua/Seguro -->
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Mutua/Seguro -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Mutua/Seguro" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Picker x:Name="Companias" SelectedItem="{Binding InsuranceCompany}" Margin="10">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Allianz</x:String>
+                                    <x:String>AXA</x:String>
+                                    <x:String>Ping An Insurance</x:String>
+                                    <x:String>China Life Insurance</x:String>
+                                    <x:String>Prudential plc</x:String>
+                                    <x:String>AIG (American International Group)</x:String>
+                                    <x:String>State Farm</x:String>
+                                    <x:String>Zurich Insurance Group</x:String>
+                                    <x:String>MetLife</x:String>
+                                    <x:String>Generali</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+
+                    <!-- Tarifa -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Tarifa" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Placeholder="Adeslas, Sanitas, DKV ..."
+                               Text="{Binding Tariff}"    
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               TextColor="Black"
+                               WidthRequest="400">
+                        </Entry>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" Margin="15" WidthRequest="200">
+                        <Label Text="Nº de Póliza" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               IsEnabled="False"
+                               VerticalOptions="CenterAndExpand" 
+                               WidthRequest="300"/>
+
+                        <Entry Text="{Binding InsuranceNumber}"
+                               Margin="10"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" 
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" Margin="15" WidthRequest="200">
+                        <Label Text="Tarifa Predeterminada" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Picker x:Name="Tarifa" SelectedItem="{Binding  DefaultTariff}" Margin="10">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Tarifa Predeterminada</x:String>
+                                    <x:String>Tarifa Estándar</x:String>
+                                    <x:String>Tarifa Premium</x:String>
+                                    <x:String>Tarifa Personalizada</x:String>
+                                    <x:String>Tarifa de Descuento</x:String>
+                                    <!-- Añade más tipos de tarifa según sea necesario -->
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Información de Alta/Baja -->
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Fecha de Alta -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Fecha de Alta" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <DatePicker x:Name="FechaAlta"
+                                    Date="{Binding ActiveTariff}"
+                                    Format="dd/MM/yyyy"
+                                    Margin="10"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="CenterAndExpand" /> 
+                    </StackLayout>
+
+                    <!-- Fecha de Caducidad -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Fec. Caducidad" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <DatePicker x:Name="FechaCaducidad"
+                                    Date="{Binding ExpiringTariff}"
+                                    Format="dd/MM/yyyy"
+                                    Margin="10"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="CenterAndExpand" /> 
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Información de Contacto -->
+                <StackLayout BackgroundColor="#1f9489">
+                    <Label Text="Datos de Domicilio"
+                           TextColor="White"
+                           FontFamily="Bold"
+                           FontSize="16"
+                           Padding="10"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Dirección -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Dirección" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding Direction}"
+                               Placeholder="Indalecio Prieto, 3, 1ºA"
+                               Margin="10"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="600"/>
+                    </StackLayout>
+
+                    <!-- CP -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="CP" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding PostCode}"
+                               Placeholder="07003" 
+                               MaxLength="5"
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+                </StackLayout>  
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Población -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Poblacion" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding City}"
+                              Placeholder="Palma de Mallorca" 
+                               Margin="10"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="400"/>
+                    </StackLayout>
+
+                    <!-- Provincia -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Provincia"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding Population}"
+                              Placeholder="Comunitat valenciana" 
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                    <!-- Pais -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Pais" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding Country}"
+                               Placeholder="ESPAÑA" 
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+                </StackLayout>  
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Teléfono Particular -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Teléfono fijo" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding HousePhone}"
+                               Keyboard="Numeric"
+                               Placeholder="971568742" 
+                               Margin="10"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                    <!-- Teléfono de Trabajo -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Teléfono de Trabajo" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center" />
+
+                        <Entry Text="{Binding WorkNumber}"
+                               Keyboard="Numeric"
+                               MaxLength="9"
+                               Placeholder="971856215"
+                               HorizontalOptions="Start"
+                               Margin="10"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+
+                    <!-- Móvil -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Móvil" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding PhoneNumber}"
+                               Keyboard="Numeric"
+                               MaxLength="9"
+                               Placeholder="666555444" 
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"/>
+                    </StackLayout>
+                    
+                    <!-- Fax -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Fax" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry IsEnabled="False"
+                               HorizontalOptions="Start"
+                               Margin="10"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="400"/>
+                    </StackLayout>
+                </StackLayout>  
+                
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Email -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Email" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Entry Text="{Binding Email}"
+                               Placeholder="info@gmail.com"
+                               Margin="10"
+                               WidthRequest="500"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+                <!-- Datos Personales -->
+                <StackLayout BackgroundColor="#1f9489">
+                    <Label Text="Datos Personales"
+                           TextColor="White"
+                           FontFamily="Bold"
+                           FontSize="16"
+                           Padding="10"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <!-- Datos Personales -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Fec. Nacimiento" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <DatePicker x:Name="FechaNacimiento"
+                                    Date="{Binding BirthDate}"
+                                    Format="dd/MM/yyyy"
+                                    Margin="10"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="CenterAndExpand" /> 
+                    </StackLayout>
+
+                    <!-- Sexo -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Sexo" 
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+
+                        <Picker x:Name="Sexo" SelectedItem="{Binding Sex}" Margin="10">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Masculino</x:String>
+                                    <x:String>Femenino</x:String>
+                                    <x:String>Híbrido</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+                    
+                    <!-- Grupo Sanguineo -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Grupo sangúineo"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Picker x:Name="Sangre"
+                                SelectedItem="{Binding BloodType}"
+                                Margin="10">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>A</x:String>
+                                    <x:String>A-</x:String>
+                                    <x:String>A+</x:String>
+                                    <x:String>B</x:String>
+                                    <x:String>B-</x:String>
+                                    <x:String>B+</x:String>
+                                    <x:String>AB</x:String>
+                                    <x:String>AB-</x:String>
+                                    <x:String>AB+</x:String>
+                                    <x:String>0</x:String>
+                                    <x:String>0-</x:String>
+                                    <x:String>0+</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+
+                    <!-- Estado Civil -->
+                    <StackLayout Orientation="Vertical" WidthRequest="200" Margin="15">
+                        <Label Text="Estado Civil"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Picker x:Name="Status"
+                                SelectedItem="{Binding MaritalStatus}"
+                                Margin="10">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>CASADO/A</x:String>
+                                    <x:String>SOLTERO/A</x:String>
+                                    <x:String>SEPARADO/A LEGAL</x:String>
+                                    <x:String>DIVORCIADO/A</x:String>
+                                    <x:String>VIUDO/A</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+                </StackLayout>
+            
+                <!-- Protección de Datos/Medios de contacto -->
+                <StackLayout BackgroundColor="#1f9489">
+                    <Label Text="Protección de Datos/Medios de Contacto"
+                           TextColor="White"
+                           FontFamily="Bold"
+                           FontSize="16"
+                           Padding="10"/>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal">
+
+                    <!-- L.O.P.D -->
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                        <CheckBox IsChecked="{Binding IsLOPDChecked}"/>
+                        <Label Text="Aceptar L.O.P.D" 
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+
+                    <!-- Acepta Información -->
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                        <CheckBox />
+                        <Label Text="Aceptar Información" 
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                    
+                    <!-- Boton Guardar -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Margin="5">
+                        <Button Text="Guardar"
+                                Command="{Binding createPatientCommand}"
+                                BackgroundColor="#1f9489"
+                                TextColor="White"
+                                FontSize="14"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

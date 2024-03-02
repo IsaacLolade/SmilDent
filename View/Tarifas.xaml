@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmileDent.View.Tarifas"
+             xmlns:viewmodel="clr-namespace:SmileDent.ViewModel"
+             x:DataType="viewmodel:TarifasViewModel"
+             Title="Tarifas"
+             IconImageSource="tariff.png">
+    <StackLayout Orientation="Vertical">
+        
+        <!-- Datos Tarifa -->
+        <StackLayout BackgroundColor="#1f9489">
+            <Label Text="Datos Administrativos"
+                   TextColor="White"
+                   FontFamily="Bold"
+                   FontSize="16"
+                   Padding="10"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                    <!-- Tarifa -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Tarifa"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Entry Text="{Binding TariffName}"
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               IsEnabled="False"
+                               WidthRequest="300"/>
+                    </StackLayout>
+
+                    <!-- Código -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Código"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Entry Text="{Binding TariffCode}"
+                               WidthRequest="200"
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               IsEnabled="False"/>
+                    </StackLayout>
+
+                    <!-- Razón Social de la Mutua -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Razón Social de la Mutua "
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Entry Text="{Binding Insurance}"
+                               WidthRequest="300"
+                               Margin="10"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               IsEnabled="False"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+                <!-- Nº de Poliza, Núm. Tarjeta, Relación inactiva -->
+                <StackLayout Orientation="Horizontal" >
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <!-- Nº de Poliza -->
+                        <Label Text="Nº de Poliza "
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Entry Text="{Binding InsuranceNumber}"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Keyboard="Numeric"
+                               WidthRequest="300"/>
+                    </StackLayout>
+
+                    <!-- Núm. Tarjeta -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Núm. Tarjeta"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Entry Text="{Binding CardNumber}"
+                               PlaceholderColor="Grey"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               Keyboard="Numeric"
+                               WidthRequest="300"/>
+                    </StackLayout>
+
+                    <!-- Relación inactiva -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Relación inactiva"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <DatePicker HorizontalOptions="Start"
+                                    Date="{Binding InactiveRecord}"
+                                    Margin="10"
+                                    VerticalOptions="CenterAndExpand"
+                                    IsEnabled="False"
+                                    Format="dd/mm/yyyy"/>
+                    </StackLayout>
+                </StackLayout>
+                
+                <!-- Fecha de Alta y Fec. Caducidad -->
+                <StackLayout Orientation="Horizontal" >
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <!-- Fecha de Alta -->
+                        <Label Text="Fecha de Alta"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <DatePicker HorizontalOptions="Start"
+                                    VerticalOptions="CenterAndExpand"
+                                    IsEnabled="False"
+                                    Margin="10"
+                                    Format="dd/mm/yyyy"
+                                    Date="{Binding ActiveRecord}"/>
+                    </StackLayout>
+
+                    <!-- Fec. Caducidad -->
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Label Text="Fec. Caducidad"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+                        <DatePicker HorizontalOptions="Start"
+                                    VerticalOptions="CenterAndExpand"
+                                    Margin="10"
+                                    Format="dd/mm/yyyy"
+                                    Date="{Binding ExpirationDate}"/>
+                    </StackLayout>
+                </StackLayout>
+                
+                <!-- Guardar los cambios -->
+                <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand">
+                    <Button VerticalOptions="EndAndExpand"
+                            Text="Guardar cambios"
+                            TextColor="White"
+                            Margin="15"
+                            BackgroundColor="#1f9489"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        
+        
+</ContentPage>

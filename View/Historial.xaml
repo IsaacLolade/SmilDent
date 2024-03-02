@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmileDent.View.Historial"
+             xmlns:viewmodel="clr-namespace:SmileDent.ViewModel"
+             x:DataType="viewmodel:HistorialViewModel"
+             Title="Historial"
+             IconImageSource="history.png">
+    <Grid>
+                <Grid.ColumnDefinitions>
+                   
+                    <ColumnDefinition Width="*" />
+                   
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <StackLayout Orientation="Vertical" 
+                             Padding="15"
+                             HorizontalOptions="Start" >
+                    
+                    <!-- Datos Personales -->
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Label Text="Paciente: "
+                               Padding="10"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"/>
+
+                        <Entry Text="{Binding FullName}"
+                               TextColor="Black"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="200"
+                               IsEnabled="False"/>
+
+                        <Label Text="Edad: "
+                               Margin="10"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="End"/> 
+
+                        <Entry Text="{Binding Age}"
+                               IsEnabled="False"
+                               TextColor="Black"
+                               HorizontalOptions="Start"/> 
+
+                        <Label Text="Tarifa: "
+                               Margin="10"
+                               TextColor="#1f9489"
+                               FontSize="14"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="End"/> 
+                        <Entry Text="{Binding TariffType}"
+                               WidthRequest="200"
+                               TextColor="#1f9489"
+                               IsEnabled="False"/>
+                    </StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="10">
+                        <Label Text="Historial Médico"
+                               TextColor="#1f9489"
+                               Padding="10"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        
+                        <Entry Text="{Binding  History}"
+                               Placeholder="Añadir al historial"
+                               PlaceholderColor="Grey"
+                               TextColor="Black"
+                               HorizontalOptions="Start"
+                               WidthRequest="500"/> 
+                        <Button Text="Guardar"
+                                Command="{Binding  AddMedicalHistoryCommand}"
+                                Padding="5"
+                                BackgroundColor="#1f9489"
+                                HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                    <ListView x:Name="historyView" ItemsSource="{Binding  MedicalHistory}" VerticalScrollBarVisibility="Never">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical" Padding="15">
+                                        <Label Text="{Binding}" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    
+                </StackLayout>
+                                     <!-- Alergias -->
+                <StackLayout Grid.Column="1"
+                             Padding="15">
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="10">
+                        <Label Text="Alertas"
+                               TextColor="#1f9489"
+                               Padding="10"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        
+                        <Entry Text="{Binding Allergie}"
+                               Placeholder="Añadir alergia"
+                               PlaceholderColor="Grey"
+                               TextColor="Black"
+                               HorizontalOptions="Start"
+                               WidthRequest="500"/> 
+                        <Button Text="Guardar"
+                                Command="{Binding AddAlertCommand}"
+                                Padding="5"
+                                BackgroundColor="#1f9489"
+                                HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                    <ListView x:Name="alertas" ItemsSource="{Binding Allergies}"  VerticalScrollBarVisibility="Never">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical" Padding="15">
+                                        <Label Text="{Binding}"
+                                               TextColor="#94571f"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+</ContentPage>
