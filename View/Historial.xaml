@@ -35,18 +35,6 @@
                                WidthRequest="200"
                                IsEnabled="False"/>
 
-                        <Label Text="Edad: "
-                               Margin="10"
-                               TextColor="#1f9489"
-                               FontSize="14"
-                               VerticalOptions="CenterAndExpand"
-                               HorizontalOptions="End"/> 
-
-                        <Entry Text="{Binding Age}"
-                               IsEnabled="False"
-                               TextColor="Black"
-                               HorizontalOptions="Start"/> 
-
                         <Label Text="Tarifa: "
                                Margin="10"
                                TextColor="#1f9489"

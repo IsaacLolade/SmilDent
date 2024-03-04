@@ -89,6 +89,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.23.1, )"
+            },
+            "Syncfusion.Maui.Scheduler": {
+              "target": "Package",
+              "version": "[24.2.8, )"
             }
           },
           "imports": [
@@ -144,6 +148,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.23.1, )"
+            },
+            "Syncfusion.Maui.Scheduler": {
+              "target": "Package",
+              "version": "[24.2.8, )"
             }
           },
           "imports": [
@@ -199,6 +207,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.23.1, )"
+            },
+            "Syncfusion.Maui.Scheduler": {
+              "target": "Package",
+              "version": "[24.2.8, )"
             }
           },
           "imports": [
@@ -249,6 +261,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.23.1, )"
+            },
+            "Syncfusion.Maui.Scheduler": {
+              "target": "Package",
+              "version": "[24.2.8, )"
             }
           },
           "imports": [

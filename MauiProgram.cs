@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using SmileDent.View;
 using SmileDent.ViewModel;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace SmileDent;
 
@@ -9,6 +10,7 @@ public static class MauiProgram
     public static MauiApp CreateMauiApp()
     {
         var builder = MauiApp.CreateBuilder();
+        builder.ConfigureSyncfusionCore();
         builder
             .UseMauiApp<App>()
             .ConfigureFonts(fonts =>

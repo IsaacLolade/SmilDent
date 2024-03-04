@@ -37,6 +37,9 @@ public partial class CreacionPacienteViewModel : ObservableObject, INotifyProper
     {
         // Autogenerate an unic Id for each patient
         Id = Guid.NewGuid().ToString("N");
+        BirthDate = DateTime.Now;
+        ActiveTariff = DateTime.Now;
+        ExpiringTariff = DateTime.Now;
     }
     
 public string Id
@@ -409,8 +412,10 @@ async Task createPatient()
          !string.IsNullOrEmpty(MaritalStatus)&& 
          IsLOPDChecked)
         {
+            // Conéctate a MongoDB
             var connector = new Mongo("mongodb://admin:12345678@34.155.217.86:27017/", "SmileDent");
-
+           
+            // Obtiene la colección MongoDB para los pacientes y tarifas
             var patientDb = connector.GetPatientCollection();
             var tarifDb = connector.GetTariffCollection();
 
@@ -428,7 +433,8 @@ async Task createPatient()
                 defaultTariff = DefaultTariff, inactiveRecord = Inactiv, activeTariff = ActiveTariff,
                 expiringTariff = ExpiringTariff
             };
-
+            
+            // añadir a la base de datos
             await patientDb.InsertOneAsync(paciente);
             await tarifDb.InsertOneAsync(tariff);
             

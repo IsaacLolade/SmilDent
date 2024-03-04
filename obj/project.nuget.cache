@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zOzUC8R56o0LU6ouBLuaBQA3dbgrtI3i85X9MQB3QzvD0YoLZ+0HPjP2vtrERX1QrZpDsrIZRadn1FqLcvlwbw==",
+  "dgSpecHash": "uG/ZEmDbu8H94N4xd+fBzTG11AgYn9tXO7zEqiS/jVzUj4vNStGYmIh2+bp7pxxb2Ill2d3xqm7E1R9oNb3/jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\isaac\\RiderProjects\\SmileDent\\SmileDent\\SmileDent.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,9 @@
     "C:\\Users\\isaac\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
     "C:\\Users\\isaac\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\isaac\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\isaac\\.nuget\\packages\\syncfusion.licensing\\24.2.8\\syncfusion.licensing.24.2.8.nupkg.sha512",
+    "C:\\Users\\isaac\\.nuget\\packages\\syncfusion.maui.core\\24.2.8\\syncfusion.maui.core.24.2.8.nupkg.sha512",
+    "C:\\Users\\isaac\\.nuget\\packages\\syncfusion.maui.scheduler\\24.2.8\\syncfusion.maui.scheduler.24.2.8.nupkg.sha512",
     "C:\\Users\\isaac\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\isaac\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\isaac\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",

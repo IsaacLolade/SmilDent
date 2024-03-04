@@ -9,6 +9,6 @@ public partial class Agenda : ContentPage
     public Agenda()
     {
         InitializeComponent();
-       
+        BindingContext = new AgendaViewModel();
     }
 }

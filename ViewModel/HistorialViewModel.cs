@@ -163,19 +163,19 @@ public partial class HistorialViewModel : ObservableObject
         {
             var connector = new Mongo("mongodb://admin:12345678@34.155.217.86:27017/", "SmileDent");
 
-            // Retrieve medical history from the database
+            // Obtener historial medico de la base de datos
             var historyDb = connector.GetMedicalHistory();
             var filter = Builders<MedicalHistory>.Filter.Eq(u => u.user, paciente.Document_number);
             var medicalHistoryList = await historyDb.Find(filter).ToListAsync();
             MedicalHistory = medicalHistoryList.Select(history => history.medicalReport).ToList();
 
-            // Retrieve alerts from the database
+            // Obtener Alertas de la base de datos
             var alertsDb = connector.GetAlertsCollection();
             var alertsFilter = Builders<Alerts>.Filter.Eq(u => u.user, paciente.Document_number);
             var alertsList = await alertsDb.Find(alertsFilter).ToListAsync();
             Allergies = alertsList.Select(alert => alert.alert).ToList();
 
-            // Set other properties
+            // ASginar otras variables
             Name = paciente.Name;
             FullName = paciente.Name + " " + paciente.Surname;
             TariffType = paciente.Tariff;

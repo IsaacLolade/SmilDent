@@ -655,6 +655,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -3145,6 +3191,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -5616,6 +5708,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -8093,6 +8231,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -10567,6 +10751,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -13038,6 +13268,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -15506,6 +15782,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -17983,6 +18305,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -20449,6 +20817,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -21148,6 +21562,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -21828,6 +22288,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -22514,6 +23020,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -23197,6 +23749,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -23874,6 +24472,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -24557,6 +25201,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -25237,6 +25927,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -25940,6 +26676,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -26639,6 +27421,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -27319,6 +28147,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -28005,6 +28879,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -28688,6 +29608,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -29365,6 +30331,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -30048,6 +31060,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -30728,6 +31786,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -31574,6 +32678,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -32388,6 +33538,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -33183,6 +34379,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -33984,6 +35226,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -34782,6 +36070,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -35577,6 +36911,52 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -36369,6 +37749,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -37173,6 +38599,52 @@
         "runtime": {
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/24.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "related": ".deps.json;.pri;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
           }
         }
       },
@@ -39654,6 +41126,130 @@
         "snappier.nuspec"
       ]
     },
+    "Syncfusion.Licensing/24.2.8": {
+      "sha512": "lrqEzVIGYkgKrHg8QiBgoocAca2AnFlAUXNIa6c8HSlctYQ0Ax5WZ3MQxavQaxlbxsZKOO92ZL4rH+HKaZYCQQ==",
+      "type": "package",
+      "path": "syncfusion.licensing/24.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/net7.0/Syncfusion.Licensing.dll",
+        "lib/net8.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.24.2.8.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.Core/24.2.8": {
+      "sha512": "FMBN/bdl7t0DqAwghgqAS+eeYpR/na5WK1Wdsnz6VwhuWjCQFBsD5zynMo0wBIV1eMfRwaW97kpup8uXGd9jPA==",
+      "type": "package",
+      "path": "syncfusion.maui.core/24.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Core.aar",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-ios16.1/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-ios16.1/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-maccatalyst16.1/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-maccatalyst16.1/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.pri",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.xml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xaml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xbf",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xaml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xbf",
+        "lib/net7.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net7.0/Syncfusion.Maui.Core.dll",
+        "lib/net7.0/Syncfusion.Maui.Core.xml",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Core.xml",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Core.xml",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.xml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.pri",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.xml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xaml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xbf",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xaml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xbf",
+        "lib/net8.0/Syncfusion.Maui.Core.deps.json",
+        "lib/net8.0/Syncfusion.Maui.Core.dll",
+        "lib/net8.0/Syncfusion.Maui.Core.xml",
+        "syncfusion.maui.core.24.2.8.nupkg.sha512",
+        "syncfusion.maui.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.Scheduler/24.2.8": {
+      "sha512": "EsNquuskwUCxQDjuUYM0OAeEmrsGqQ1w+oR7lMZiDGn1A2Ug21ZIymVLsRaw37kOhJdRASoqSzN1L8TOYgmEpQ==",
+      "type": "package",
+      "path": "syncfusion.maui.scheduler/24.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Scheduler.aar",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-android33.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0-ios16.1/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-ios16.1/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net7.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net7.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net7.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net7.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.dll",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Scheduler.xml",
+        "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.dll",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Scheduler.xml",
+        "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "lib/net8.0/Syncfusion.Maui.Scheduler.deps.json",
+        "lib/net8.0/Syncfusion.Maui.Scheduler.dll",
+        "lib/net8.0/Syncfusion.Maui.Scheduler.xml",
+        "lib/net8.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
+        "syncfusion.maui.scheduler.24.2.8.nupkg.sha512",
+        "syncfusion.maui.scheduler.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -41906,7 +43502,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
       "Microsoft.NET.ILLink.Tasks >= 8.0.0",
       "MongoDB.Bson >= 2.23.1",
-      "MongoDB.Driver >= 2.23.1"
+      "MongoDB.Driver >= 2.23.1",
+      "Syncfusion.Maui.Scheduler >= 24.2.8"
     ],
     "net8.0-ios17.0": [
       "CommunityToolkit.Mvvm >= 8.2.2",
@@ -41915,7 +43512,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
       "Microsoft.NET.ILLink.Tasks >= 8.0.0",
       "MongoDB.Bson >= 2.23.1",
-      "MongoDB.Driver >= 2.23.1"
+      "MongoDB.Driver >= 2.23.1",
+      "Syncfusion.Maui.Scheduler >= 24.2.8"
     ],
     "net8.0-maccatalyst17.0": [
       "CommunityToolkit.Mvvm >= 8.2.2",
@@ -41924,7 +43522,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
       "Microsoft.NET.ILLink.Tasks >= 8.0.0",
       "MongoDB.Bson >= 2.23.1",
-      "MongoDB.Driver >= 2.23.1"
+      "MongoDB.Driver >= 2.23.1",
+      "Syncfusion.Maui.Scheduler >= 24.2.8"
     ],
     "net8.0-windows10.0.19041": [
       "CommunityToolkit.Mvvm >= 8.2.2",
@@ -41932,7 +43531,8 @@
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
       "MongoDB.Bson >= 2.23.1",
-      "MongoDB.Driver >= 2.23.1"
+      "MongoDB.Driver >= 2.23.1",
+      "Syncfusion.Maui.Scheduler >= 24.2.8"
     ]
   },
   "packageFolders": {
@@ -42024,6 +43624,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.23.1, )"
+          },
+          "Syncfusion.Maui.Scheduler": {
+            "target": "Package",
+            "version": "[24.2.8, )"
           }
         },
         "imports": [
@@ -42079,6 +43683,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.23.1, )"
+          },
+          "Syncfusion.Maui.Scheduler": {
+            "target": "Package",
+            "version": "[24.2.8, )"
           }
         },
         "imports": [
@@ -42134,6 +43742,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.23.1, )"
+          },
+          "Syncfusion.Maui.Scheduler": {
+            "target": "Package",
+            "version": "[24.2.8, )"
           }
         },
         "imports": [
@@ -42184,6 +43796,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.23.1, )"
+          },
+          "Syncfusion.Maui.Scheduler": {
+            "target": "Package",
+            "version": "[24.2.8, )"
           }
         },
         "imports": [

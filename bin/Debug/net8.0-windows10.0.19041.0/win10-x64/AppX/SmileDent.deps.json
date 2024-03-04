@@ -15,6 +15,7 @@
           "Microsoft.Maui.Controls.Compatibility": "8.0.3",
           "MongoDB.Bson": "2.23.1",
           "MongoDB.Driver": "2.23.1",
+          "Syncfusion.Maui.Scheduler": "24.2.8",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },
         "runtime": {
@@ -559,6 +560,41 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.8": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "24.2.8.0",
+            "fileVersion": "24.2.8.0"
+          }
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.8": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.8"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "assemblyVersion": "24.2.8.0",
+            "fileVersion": "24.2.8.0"
+          }
+        }
+      },
+      "Syncfusion.Maui.Scheduler/24.2.8": {
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.8"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Scheduler.dll": {
+            "assemblyVersion": "24.2.8.0",
+            "fileVersion": "24.2.8.0"
+          }
+        },
+        "resources": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Scheduler.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.Memory/4.5.5": {},
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
@@ -827,6 +863,27 @@
       "sha512": "sha512-rFtK2KEI9hIe8gtx3a0YDXdHOpedIf9wYCEYtBEmtlyiWVX3XlCNV03JrmmAi/Cdfn7dxK+k0sjjcLv4fpHnqA==",
       "path": "snappier/1.0.0",
       "hashPath": "snappier.1.0.0.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/24.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lrqEzVIGYkgKrHg8QiBgoocAca2AnFlAUXNIa6c8HSlctYQ0Ax5WZ3MQxavQaxlbxsZKOO92ZL4rH+HKaZYCQQ==",
+      "path": "syncfusion.licensing/24.2.8",
+      "hashPath": "syncfusion.licensing.24.2.8.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Core/24.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FMBN/bdl7t0DqAwghgqAS+eeYpR/na5WK1Wdsnz6VwhuWjCQFBsD5zynMo0wBIV1eMfRwaW97kpup8uXGd9jPA==",
+      "path": "syncfusion.maui.core/24.2.8",
+      "hashPath": "syncfusion.maui.core.24.2.8.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Scheduler/24.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EsNquuskwUCxQDjuUYM0OAeEmrsGqQ1w+oR7lMZiDGn1A2Ug21ZIymVLsRaw37kOhJdRASoqSzN1L8TOYgmEpQ==",
+      "path": "syncfusion.maui.scheduler/24.2.8",
+      "hashPath": "syncfusion.maui.scheduler.24.2.8.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

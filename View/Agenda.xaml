@@ -2,10 +2,91 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler"
+             xmlns:viewModel="clr-namespace:SmileDent.ViewModel"
+             x:DataType="viewModel:AgendaViewModel"
              x:Class="SmileDent.View.Agenda"
              Title="Agenda"
-             IconImageSource="calendar.png">
+             IconImageSource="calendar.png"
+             BindingContext="{Binding Source={RelativeSource Self}}">
        
-     
+      <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackLayout Orientation="Vertical"
+                                    Padding="15"
+                                    >
+            <scheduler:SfScheduler View="Week"
+                                   AllowedViews="Day,Week,WorkWeek,Month,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth,Agenda"
+                                   TodayHighlightBrush="#1f9489"
+                                   AppointmentsSource="{Binding CustomEvents}">
+                <scheduler:SfScheduler.AppointmentMapping>
+                    <scheduler:SchedulerAppointmentMapping  Subject="Name"
+                                                            StartTime="EventStart"
+                                                            EndTime="EventEnd"
+                                                            Background="Color">
+              
+                    </scheduler:SchedulerAppointmentMapping>
+                </scheduler:SfScheduler.AppointmentMapping>
+            </scheduler:SfScheduler>
+        </StackLayout>
+        <StackLayout Grid.Column="1"
+                     Padding="15" 
+                     Orientation="Vertical">
+            <!-- Date Picker -->
+            <StackLayout Orientation="Vertical" Padding="15">
+                <Label Text="Seleccione la fecha:" Margin="0,0,0,5" TextColor="#1f9489" />
+                <DatePicker Date="{Binding SelectedDate}" Format="yyyy-MM-dd"  />
+            </StackLayout>
+
+           <StackLayout Orientation="Horizontal" Padding="15">
+               <!-- Time Picker (Start Time) -->
+               <StackLayout Orientation="Vertical" Padding="15">
+                   <Label Text="Seleccione la hora de inicio:" Margin="0,0,0,5" TextColor="#1f9489" />
+                   <TimePicker Time="{Binding SelectedTime}" Format="hh:mm tt" />
+               </StackLayout>
+
+               <!-- Time Picker (End Time) -->
+               <StackLayout Orientation="Vertical" Padding="15">
+                   <Label Text="Seleccione la hora de finalización:" Margin="0,0,0,5" TextColor="#1f9489" />
+                   <TimePicker Time="{Binding EndTime}" Format="hh:mm tt" />
+               </StackLayout>
+           </StackLayout>
+            
+            <!-- Seat Picker-->
+            <StackLayout Orientation="Vertical" Padding="15" >
+                <Label Text="Seleccione la silla que se le reservará:" Margin="0,0,0,5" TextColor="#1f9489" />
+                <Picker x:Name="Seat" SelectedItem="{Binding Seat}" Margin="10">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:Int32}">
+                            <x:Int32>1</x:Int32>
+                            <x:Int32>2</x:Int32>
+                            <x:Int32>3</x:Int32>
+                            <x:Int32>4</x:Int32>
+                            <x:Int32>5</x:Int32>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+            <!-- Entry for Patient's Name -->
+            <StackLayout Orientation="Vertical" Padding="15">
+                <Label Text="Nombre del paciente:" Margin="0,0,0,5"  TextColor="#1f9489"/>
+                <Entry Text="{Binding Patient}" Placeholder="Introduzca nombre del paciente" />
+            </StackLayout>
+
+            <!-- Entry for Dentist's Name -->
+            <StackLayout Orientation="Vertical" Padding="15">
+                <Label Text="Nombre del Dentista:" Margin="0,0,0,5" TextColor="#1f9489" />
+                <Entry Text="{Binding Dentist}" Placeholder="Introduzca nombre del dentista" />
+            </StackLayout>
+
+            <!-- Button to create the appointment -->
+            <Button Text="Nueva Cita" Command="{Binding AddAppointmentCommand}" Margin="0,15,0,0" WidthRequest="100" BackgroundColor="#1f9489"/>
+
+        </StackLayout>
+    </Grid>
   
 </ContentPage>

@@ -29,6 +29,9 @@ public class MonoPackageManager_Resources {
 		"MongoDB.Libmongocrypt.dll",
 		"SharpCompress.dll",
 		"Snappier.dll",
+		"Syncfusion.Licensing.dll",
+		"Syncfusion.Maui.Core.dll",
+		"Syncfusion.Maui.Scheduler.dll",
 		"Xamarin.Android.Glide.dll",
 		"Xamarin.Android.Glide.Annotations.dll",
 		"Xamarin.Android.Glide.DiskLruCache.dll",
@@ -147,6 +150,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
+		"Syncfusion.Maui.Scheduler.resources.dll",
 		"_Microsoft.Android.Resource.Designer.dll",
 	};
 	public static String[] Dependencies = new String[]{

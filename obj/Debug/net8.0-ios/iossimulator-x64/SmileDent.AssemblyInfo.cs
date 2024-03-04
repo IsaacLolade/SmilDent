@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmileDent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e8d71f29e4eff5b7ae3e5a6bdfd735a0ec73e7c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+afa5dfc1728882ea2fd713b20f4bab34131d69d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmileDent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmileDent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

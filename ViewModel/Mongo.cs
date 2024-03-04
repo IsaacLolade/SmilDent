@@ -47,6 +47,11 @@ public class Mongo
     {
         return db.GetCollection<Alerts>("Alerts");
     }
+    
+    public IMongoCollection<Appointment> GetAppointmentCollection()
+    {
+        return db.GetCollection<Appointment>("Appointments");
+    }
 }
 
 public class Staff
@@ -110,4 +115,16 @@ public class Alerts
     public ObjectId Id {get; set; }
     public string user { get; set; }
     public string alert { get; set; }
+}
+
+public class Appointment
+{
+
+    public ObjectId Id { get; set; }
+
+    public DateTime EventStart { get; set; }
+    public DateTime EventEnd { get; set; }
+    public string Name { get; set; }
+    public string Dentist { get; set; }
+    public int Seat { get; set; }
 }
